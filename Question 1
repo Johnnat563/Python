@@ -1,0 +1,6 @@
+#declaring a variable
+value = 563
+print(" print the declare value-", value)
+#re-declaring a variable
+value = 345
+print(" print the re-declare value-", value)
