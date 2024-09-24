@@ -1,0 +1,33 @@
+def troubleshoot_fault():
+    print("Computer Troubleshooting")
+    print("--------------------------------")
+    fault_map = {
+        "won't turn on": [
+            "Check the power connection cable",
+            "Check for blown fuse or tripped circuit"
+            "Check the power button",
+        ],
+        "slow": [
+            "Check for disk space and free up space if necessary",
+            "Check for software updates"
+            "Check for malware or viruses"
+        ],
+        "won't connect to internet": [
+            "Check network cables and connections",
+            "Check Wi-Fi settings",
+            "Check for internet service provider outages"
+        ],
+         "freezes": [
+            "Check for overheating",
+            "Check for driver updates",
+            "Check for software conflicts"
+        ]
+    }
+    fault_choice = input("Describe the fault (e.g., won't turn on, slow, freezes): ").lower()
+    if fault_choice in fault_map:
+        print("Troubleshooting steps:")
+        for step in fault_map[fault_choice]:
+            print(step)
+    else:
+        print("Sorry, I couldn't identify the fault. Please try again.")
+troubleshoot_fault()
